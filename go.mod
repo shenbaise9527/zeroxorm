@@ -1,4 +1,4 @@
-module github.con/shenbaise9527/zeroxorm
+module github.com/shenbaise9527/zeroxorm
 
 go 1.14
 
