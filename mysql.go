@@ -9,8 +9,8 @@ const (
 	duplicateEntryCode uint16 = 1062
 )
 
-// NewZeroMysqlConn use xorm to bridge go-zero.
-func NewZeroMysqlConn(datasource string, opts ...ZeroxormOption) sqlx.SqlConn {
+// NewZeroMysql use xorm to bridge go-zero.
+func NewZeroMysql(datasource string, opts ...ZeroxormOption) sqlx.SqlConn {
 	opts = append(opts, withMysqlAcceptable())
 	return NewZeroxormConn("mysql", datasource, opts...)
 }

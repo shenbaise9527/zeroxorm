@@ -6,7 +6,7 @@
 ## oracle
 ``` go
 // 创建sqlx.SqlConn对象,针对oracle.
-conn := zeroxorm.NewZeroOracleConn(c.DataSource)
+conn := zeroxorm.NewZeroOracle(c.DataSource)
 
 // 使用方式与sqlx.NewMySql(c.DataSource)创建出来的对象行为完全一致.
 ```
@@ -14,7 +14,7 @@ conn := zeroxorm.NewZeroOracleConn(c.DataSource)
 ## mysql
 ``` go
 // 创建sqlx.SqlConn对象,针对mysql.
-conn := zeroxorm.NewZeroMysqlConn(c.DataSource)
+conn := zeroxorm.NewZeroMysql(c.DataSource)
 
 // 使用方式与sqlx.NewMySql(c.DataSource)创建出来的对象行为完全一致.
 ```

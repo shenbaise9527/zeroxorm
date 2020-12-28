@@ -2,8 +2,8 @@ package zeroxorm
 
 import "github.com/tal-tech/go-zero/core/stores/sqlx"
 
-// NewZeroOracleConn use xorm to bridge go-zero.
-func NewZeroOracleConn(datasource string, opts ...ZeroxormOption) sqlx.SqlConn {
+// NewZeroOracle use xorm to bridge go-zero.
+func NewZeroOracle(datasource string, opts ...ZeroxormOption) sqlx.SqlConn {
 	opts = append(opts, withOracleAcceptable())
 	return NewZeroxormConn("oci8", datasource, opts...)
 }
